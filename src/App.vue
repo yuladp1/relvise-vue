@@ -132,7 +132,156 @@
           </h3>
         </div>
       </div>
+
+      <div class="practice__body">
+        <div class="practice__column _container">
+          <article class="practice__item item-practice">
+            <div class="item-practice__content">
+              <a href="" class="item-practice__link">
+                <h4 class="item-practice__title">
+                  A single source <br />
+                  of truth
+                </h4>
+              </a>
+              <div class="item-practice__text">
+                Newton thought that light was made up of particles, but then it was
+                discovered
+              </div>
+            </div>
+            <a href="" class="item-practice__image _ibg">
+              <img src="./assets/images/practice/1.jpg" alt="" />
+            </a>
+          </article>
+          <article class="practice__item item-practice">
+            <div class="item-practice__content">
+              <a href="" class="item-practice__link">
+                <h4 class="item-practice__title">Fastest way to organize</h4>
+              </a>
+              <div class="item-practice__text">
+                “Quantum mechanics” is the description of the behaviour of matter
+              </div>
+            </div>
+            <a href="" class="item-practice__image _ibg">
+              <img src="./assets/images/practice/2.jpg" alt="" />
+            </a>
+          </article>
+          <article class="practice__item item-practice">
+            <div class="item-practice__content">
+              <a href="" class="item-practice__link">
+                <h4 class="item-practice__title">Fastest way to take action</h4>
+              </a>
+              <div class="item-practice__text">
+                They describe a universe consisting of bodies moving
+              </div>
+            </div>
+            <a href="" class="item-practice__image _ibg">
+              <img src="./assets/images/practice/3.jpg" alt="" />
+            </a>
+          </article>
+          <article class="practice__item item-practice">
+            <div class="item-practice__content">
+              <a href="" class="item-practice__link">
+                <h4 class="item-practice__title">Work better together</h4>
+              </a>
+              <div class="item-practice__text">
+                They finally obtained a consistent description of the behaviour
+              </div>
+            </div>
+            <a href="" class="item-practice__image _ibg">
+              <img src="./assets/images/practice/4.jpg" alt="" />
+            </a>
+          </article>
+        </div>
+      </div>
     </section>
+
+    <section class="page__whoweare whoweare">
+      <div class="whoweare__wrapper _container">
+        <div class="whoweare__header header-block">
+          <h2 class="header__block-title">Who We Are</h2>
+          <h3 class="header__block-text">
+            Problems trying to resolve the conflict between the two major realms <br />
+            of Classical physics: Newtonian mechanics
+          </h3>
+        </div>
+        <div class="whoweare__body">
+          <div class="whoweare__video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/2uZYKcKHgU0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="whoweare__content">
+            <div class="whoweare__header-content header-block">
+              <h2 class="header__block-title">Most trusted in our field</h2>
+              <h3 class="header__block-text">
+                Most calendars are designed for teams. Slate is designed for freelancers
+                who want a simple way to plan their schedule.
+              </h3>
+            </div>
+            <div class="whoweare__items">
+              <div class="whoweare__item item-whoweare">
+                <div class="item-whoweare__icon">
+                  <img src="./assets/images/whoweare/1.svg" alt="" />
+                </div>
+                <div class="item-whoweare__body">
+                  <div class="item-whoweare__title">
+                    the quick fox jumps over the lazy dog
+                  </div>
+                  <div class="item-whoweare__text">Things on a very small scale ...</div>
+                </div>
+              </div>
+              <div class="whoweare__item item-whoweare">
+                <div class="item-whoweare__icon">
+                  <img src="./assets/images/whoweare/2.svg" alt="" />
+                </div>
+                <div class="item-whoweare__body">
+                  <div class="item-whoweare__title">
+                    the quick fox jumps over the lazy dog
+                  </div>
+                  <div class="item-whoweare__text">Things on a very small scale ...</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="page__clients clients">
+      <div class="clients__container _container">
+        <div class="clients__items">
+          <div class="clients__item">
+            <img src="./assets/images/clients/1.png" alt="" />
+          </div>
+
+          <div class="clients__item">
+            <img src="./assets/images/clients/2.png" alt="" />
+          </div>
+
+          <div class="clients__item">
+            <img src="./assets/images/clients/3.png" alt="" />
+          </div>
+
+          <div class="clients__item">
+            <img src="./assets/images/clients/4.png" alt="" />
+          </div>
+
+          <div class="clients__item">
+            <img src="./assets/images/clients/5.png" alt="" />
+          </div>
+
+          <div class="clients__item">
+            <img src="./assets/images/clients/6.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
     <footer class="footer">footer</footer>
   </div>
 </template>
@@ -328,7 +477,7 @@ page {
   position: relative;
 }
 ._ibg img {
-  /*position: absolute; */
+  position: absolute;
   top: 0;
   left: 0;
   object-fit: cover;
@@ -491,6 +640,207 @@ page {
   letter-spacing: 0.1px;
   color: #737373;
 }
+/*----------Page-practice */
 
+.practice {
+  padding: 125px 0 80px 0;
+}
+.practice__container {
+}
+
+.practice__header {
+  margin: 0 0 45px 0;
+}
+.practice__body {
+  margin: 0 -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.practice__column {
+  display: flex;
+  padding: 0 15px;
+  flex-wrap: wrap;
+}
+.practice__item {
+  background-color: #fff;
+  padding: 0 15px;
+  flex: 0 1 25%;
+}
+@media (max-width: 1000px) {
+  .practice__item {
+    flex: 0 1 50%;
+  }
+}
+@media (max-width: 670px) {
+  .practice__item {
+    flex: 0 1 100%;
+  }
+}
+.item-practice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item-practice__content {
+  padding: 30px;
+}
+.item-practice__link {
+  display: inline-block;
+}
+.item-practice__link:hover {
+  transform: scale(1.1);
+  color: #0cbccc;
+}
+.item-practice__link:not(:last-child) {
+  margin: 0 0 15px 0;
+}
+.item-practice__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #252b42;
+}
+.item-practice__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #737373;
+}
+.item-practice__text:hover {
+  color: black;
+}
+.item-practice__image {
+  display: block;
+  height: 138px;
+  width: 100%;
+  padding: 0 0 67% 0;
+}
+.item-practice__image > img {
+  width: 100%;
+  height: 100%;
+}
+/* -------WHOWEARE ---------*/
+.whoweare {
+  padding: 80px 0 130px 0;
+  background-color: white;
+}
+.whoweare__header {
+  margin: 0 0 100px 0;
+}
+.whoweare__body {
+  display: flex;
+}
+@media (max-width: 950px) {
+  .whoweare__body {
+    flex-direction: column-reverse;
+  }
+}
+.whoweare__video {
+  flex: 0 0 57%;
+  position: relative;
+  padding: 0 0 42.25% 0;
+}
+@media (max-width: 950px) {
+  .whoweare__video {
+    padding: 0 0 57% 0;
+  }
+  .whoweare__video > iframe {
+    padding: 50px 0 0 0;
+  }
+}
+.whoweare__video > iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.whoweare__header {
+  margin: 0 0 100px 0;
+}
+@media (max-width: 950px) {
+  .whoweare__header {
+    margin: 0 0 40px 0;
+  }
+}
+.whoweare__header-content {
+  text-align: left;
+  margin: 0 0 50px 0;
+}
+.whoweare__content {
+  flex: 1 1 auto;
+  padding: 20px 0 0 121px;
+}
+
+@media (max-width: 1080px) {
+  .whoweare__content {
+    flex: 1 1 auto;
+    padding: 0 0 0 50px;
+  }
+}
+@media (max-width: 950px) {
+  .whoweare__content {
+    padding: 20px;
+  }
+}
+.whoweare__items {
+  display: flex;
+  flex-direction: column;
+}
+.whoweare__item {
+  display: flex;
+}
+.whoweare__item:not(:last-child) {
+  padding: 0 0 30px 0;
+}
+.item-whoweare__icon {
+  flex: 0 0 32px;
+}
+.item-whoweare__body {
+  flex: 1 1 auto;
+  padding: 0 0 0 20px;
+  text-align: left;
+}
+.item-whoweare__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #252b42;
+  padding-bottom: 5px;
+}
+
+.item-whoweare__text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #737373;
+}
+/*------CLIENTS--------*/
+
+.clients {
+  padding: 50px 0;
+}
+.clients__container {
+}
+.clients__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+}
+.clients__item > img {
+  max-width: 100%;
+}
+
+.clients__item {
+  text-align: center;
+  flex: 0 1 16.6667%;
+  padding: 8px 15px;
+  min-width: 140px;
+}
 /* FOOTER */
 </style>
