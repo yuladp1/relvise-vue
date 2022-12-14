@@ -4,12 +4,27 @@
       <header class="header__container">
         <a class="header__logo">Relvise</a>
         <nav class="header__menu menu">
-          <ul class="menu__list">
+          <ul class="menu__list" v-show="!mobile">
             <li class="menu__item"><a href="" class="menu__link">Home</a></li>
             <li class="menu__item"><a href="" class="menu__link">Product</a></li>
-            <li class="menu__item"><a href="" class="menu__link">Pricing</a></li>
+            <li class="men u__item"><a href="" class="menu__link">Pricing</a></li>
             <li class="menu__item"><a href="" class="menu__link">Contact</a></li>
           </ul>
+
+          <div
+            class="icon"
+            v-on:click="toggleMobileNav"
+            v-show="mobile"
+            v-bind:class="{ 'icon-active': mobileNav }"
+          ></div>
+          <transition name="mobile-nav">
+            <ul class="dropdown-nav" v-show="mobileNav">
+              <li class="link">Home</li>
+              <li class="link">Product</li>
+              <li class="link">Pricing</li>
+              <li class="link">Contact</li>
+            </ul>
+          </transition>
         </nav>
       </header>
     </div>
@@ -38,16 +53,48 @@
 <script>
 export default {
   name: "HeaderMain",
-  created() {},
   data() {
-    return {};
+    return {
+      scrollPosition: null,
+      mobile: false,
+      mobileNav: null,
+      windowWidth: null,
+    };
   },
-  props: {},
-  methods: {},
+  created() {
+    window.addEventListener("resize", this.checkScreen);
+  },
+  methods: {
+    toggleMobileNav() {
+      this.mobileNav = !this.mobileNav;
+    },
+    checkScreen() {
+      this.windowWidth = window.innerWidth;
+      if (this.windowWidth <= 992) {
+        this.mobile = true;
+        return;
+      } else {
+        this.mobile = false;
+        this.mobileNav = false;
+        return;
+      }
+    },
+  },
 };
 </script>
 
 <style scoped>
+.icon {
+  background-image: url("../assets/images/hamburger-menu.png");
+  display: flex;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  align-items: center;
+}
+.icon-active {
+  transform: rotate(1turn);
+}
 .wrapper__header {
   position: relative;
   width: 100%;
@@ -87,6 +134,12 @@ export default {
     margin: 0 0 0 40px;
   }
 }
+@media (max-width: 992px) {
+  header__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .menu__list {
   display: flex;
   align-items: center;
@@ -99,6 +152,35 @@ export default {
   line-height: 24px;
   font-weight: 600;
   color: #737373;
+}
+.dropdown-nav {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: space-around;
+  position: absolute;
+  width: 120px;
+  background-color: white;
+  top: 104px;
+  right: 0;
+  padding: 30px 0 30 20px;
+}
+.dropdown-nav li {
+  color: black;
+  padding: 10px;
+}
+
+.mobile-nav-enter-active,
+.mobile-nav-leave-active {
+  transition: 1s ease all;
+}
+.mobile-nav-enter-from,
+.mobile-nav-enter-to {
+  transform: translate(250px);
+}
+.mobile-nav-enter-to {
+  transform: translate(0);
 }
 page {
   flex: 1 1 auto;
