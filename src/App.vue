@@ -282,7 +282,154 @@
         </div>
       </div>
     </div>
-    <footer class="footer">footer</footer>
+
+    <section class="page__subscribe subscribe">
+      <div class="subscribe__container _container">
+        <div class="subscribe__body">
+          <h4 class="subscribe__title">Subscribe For Latest Newsletter</h4>
+          <form class="subscribe__form">
+            <input
+              class="subscribe__input"
+              type="email"
+              required
+              placeholder="your email"
+            />
+            <button class="subscribe__button" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="page__getintouch getintouch">
+      <div class="getintouch__container _container">
+        <div class="getintouch__header header-block">
+          <h2 class="header__block-title">Get In Touch</h2>
+          <h3 class="header__block-text">
+            Problems trying to resolve the conflict between the two major realms of
+            Classical physics: Newtonian mechanics
+          </h3>
+        </div>
+        <div class="getintouch__items">
+          <div class="getintouch__item">
+            <div class="getintouch__icon">
+              <img src="./assets/images/getintouch/1.svg" alt="" />
+            </div>
+            <div class="getintouch__emails">
+              <a href="mailto:georgia.young@example.com">georgia.young@example.com</a>
+              <a href="mailto:georgia.young@ple.com">georgia.young@ple.com</a>
+            </div>
+            <div class="getintouch__label">Get Support</div>
+            <a href="" class="getintouch__button">Submit Request</a>
+          </div>
+          <div class="getintouch__item">
+            <div class="getintouch__icon">
+              <img src="./assets/images/getintouch/3.svg" alt="" />
+            </div>
+            <div class="getintouch__emails">
+              <a href="mailto:georgia.young@example.com">georgia.young@example.com</a>
+              <a href="mailto:georgia.young@ple.com">georgia.young@ple.com</a>
+            </div>
+            <div class="getintouch__label">Get Support</div>
+            <a href="" class="getintouch__button">Submit Request</a>
+          </div>
+          <div class="getintouch__item">
+            <div class="getintouch__icon">
+              <img src="./assets/images/getintouch/1.svg" alt="" />
+            </div>
+            <div class="getintouch__emails">
+              <a href="mailto:georgia.young@example.com">georgia.young@example.com</a>
+              <a href="mailto:georgia.young@ple.com">georgia.young@ple.com</a>
+            </div>
+            <div class="getintouch__label">Get Support</div>
+            <a href="" class="getintouch__button">Submit Request</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page__contact contact">
+      <div class="contact__container _container">
+        <div class="contact__body">
+          <div class="contact__content">
+            <h4 class="contact__title">Consulting Agency For Your Business</h4>
+            <div class="contact__text">the quick fox jumps over the lazy dog</div>
+          </div>
+          <a href="contact__button" class="contact__button">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__container _container">
+          <div class="footer__column">
+            <div class="footer__label">Company Info</div>
+            <nav class="footer__menu menu-footer">
+              <ul class="menu-footer__list">
+                <li class="menu-footer__item"><a href="">About Us</a></li>
+                <li class="menu-footer__item"><a href="">Carrier</a></li>
+                <li class="menu-footer__item"><a href="">We are hiring</a></li>
+                <li class="menu-footer__item"><a href="">Blog</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__column">
+            <div class="footer__label">Company Info</div>
+            <nav class="footer__menu menu-footer">
+              <ul class="menu-footer__list">
+                <li class="menu-footer__item"><a href="">About Us</a></li>
+                <li class="menu-footer__item"><a href="">Carrier</a></li>
+                <li class="menu-footer__item"><a href="">We are hiring</a></li>
+                <li class="menu-footer__item"><a href="">Blog</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__column">
+            <div class="footer__label">Company Info</div>
+            <nav class="footer__menu menu-footer">
+              <ul class="menu-footer__list">
+                <li class="menu-footer__item"><a href="">About Us</a></li>
+                <li class="menu-footer__item"><a href="">Carrier</a></li>
+                <li class="menu-footer__item"><a href="">We are hiring</a></li>
+                <li class="menu-footer__item"><a href="">Blog</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__column">
+            <div class="footer__label">Company Info</div>
+            <nav class="footer__menu menu-footer">
+              <ul class="menu-footer__list">
+                <li class="menu-footer__item"><a href="">About Us</a></li>
+                <li class="menu-footer__item"><a href="">Carrier</a></li>
+                <li class="menu-footer__item"><a href="">We are hiring</a></li>
+                <li class="menu-footer__item"><a href="">Blog</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__column">
+            <div class="footer__label">Get In Touch</div>
+            <div class="footer__contacts">
+              <a href="tel:4805550103">(480) 555-0103</a>
+              <a href="">4517 Washington Ave. Manchester, Kentucky 39495</a>
+              <a href="mailto:debra.holt@example.com">debra.holt@example.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-social">
+        <div class="footer-social__container _container">
+          <h4 class="footer-social-text">
+            Made With Love By Figmaland All Right Reserved
+          </h4>
+          <div class="footer-social__icons">
+            <a href=""> <img src="./assets/images/footer-bottom/1.svg" alt="" /></a>
+            <a href=""> <img src="./assets/images/footer-bottom/2.svg" alt="" /></a>
+            <a href=""> <img src="./assets/images/footer-bottom/3.svg" alt="" /></a>
+            <a href=""> <img src="./assets/images/footer-bottom/4.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -725,6 +872,11 @@ page {
   padding: 80px 0 130px 0;
   background-color: white;
 }
+@media (max-width: 950px) {
+  .whoweare {
+    padding-bottom: 20px;
+  }
+}
 .whoweare__header {
   margin: 0 0 100px 0;
 }
@@ -819,6 +971,9 @@ page {
   color: #737373;
 }
 /*------CLIENTS--------*/
+.page__clients {
+  margin: 0 0 10px 0;
+}
 
 .clients {
   padding: 50px 0;
@@ -841,6 +996,227 @@ page {
   flex: 0 1 16.6667%;
   padding: 8px 15px;
   min-width: 140px;
+}
+/* ------subscribe--------*/
+.subscribe {
+  position: relative;
+  z-index: 3;
+  padding: 0 0 20px 0;
+}
+.subscribe::before {
+  content: "";
+  background: #252b42;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 77px;
+}
+.subscribe__body {
+  background-color: #17213c;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 50px 30px;
+  margin: 0 30px;
+  position: relative;
+}
+
+@media (max-width: 950px) {
+  .subscribe__body {
+    flex-direction: column;
+    margin: 0 0;
+  }
+}
+.subscribe__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #ffffff;
+  text-align: left;
+  flex: 0 1 50%;
+  max-width: 266px;
+}
+@media (max-width: 950px) {
+  .subscribe__title {
+    max-width: 100%;
+    padding-bottom: 20px;
+  }
+}
+.subscribe__form {
+  flex: 0 1 50%;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+@media (max-width: 950px) {
+  .subscribe__form {
+    max-width: 70%;
+  }
+}
+.subscribe__input {
+  flex: 1 1 auto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  padding-left: 20px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.subscribe__button {
+  color: white;
+  background: #ff7b47;
+  border: 1px solid #e6e6e6;
+  border-radius: 0px 5px 5px 0px;
+  padding: 15px 22px;
+}
+/*------getintouch ------*/
+
+.getintouch {
+  padding: 80px 0 136px 0;
+}
+@media (max-width: 992px) {
+  .getintouch {
+    padding: 40px 0 40px 0;
+  }
+}
+
+.getintouch__header {
+  margin: 0 0 80px 0;
+}
+
+.getintouch__items {
+  margin: 0 -15px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .getintouch__items {
+    flex-direction: column;
+  }
+  .getintouch__item {
+    min-width: 100%;
+  }
+}
+.getintouch__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 33.3333%;
+  background: white;
+  padding: 50px 15px;
+}
+.getintouch__item:hover {
+  transform: scale(1.2);
+  border: 1px solid #252b42;
+}
+.getintouch__item > *:not(:last-child) {
+  padding-bottom: 15px;
+}
+.getintouch__icon {
+}
+.getintouch__emails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #252b42;
+  text-decoration: none;
+}
+.getintouch__emails > a {
+  color: #252b42;
+}
+.getintouch__emails > *:hover {
+  text-decoration: underline;
+}
+.getintouch__label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #252b42;
+}
+.getintouch__button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #ff7b47;
+  border: 1px solid #ff7b47;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: all 0.3s ease 0.2s;
+}
+.getintouch__button:hover {
+  color: white;
+  background-color: #ff7b47;
+}
+
+/*----------contact us---------*/
+.contact__body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 38px 40px 0;
+  background: #fafafa;
+}
+@media (max-width: 723px) {
+  .contact__body {
+    padding: 20px;
+    justify-content: center;
+  }
+  .contact__body > *:not(:last-child) {
+    padding-bottom: 10px;
+  }
+  .contact__title {
+    text-align: center;
+  }
+  .contact__text {
+    text-align: center;
+  }
+  .contact__button {
+    flex-basis: 80%;
+    justify-content: center;
+  }
+}
+.contact__content {
+  text-align: left;
+  padding-right: 20px;
+}
+.contact__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #252b42;
+}
+.contact__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #737373;
+}
+.contact__button {
+  background: #ff7b47;
+  border-radius: 5px;
+  padding: 15px 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease 0.2s;
+}
+.contact__button:hover {
+  background: rgb(160, 62, 5);
 }
 /* FOOTER */
 </style>
