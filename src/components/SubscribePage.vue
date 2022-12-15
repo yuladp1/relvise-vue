@@ -3,12 +3,13 @@
     <div class="subscribe__container _container">
       <div class="subscribe__body">
         <h4 class="subscribe__title">Subscribe For Latest Newsletter</h4>
-        <form class="subscribe__form">
+        <form class="subscribe__form" v-on:submit.prevent="handleSubmit">
           <input
             class="subscribe__input"
             type="email"
             required
             placeholder="your email"
+            v-model="email"
           />
           <button class="subscribe__button" type="submit">Submit</button>
         </form>
@@ -22,10 +23,16 @@ export default {
   name: "SubscribePage",
   created() {},
   data() {
-    return {};
+    return {
+      email: "",
+    };
   },
   props: {},
-  methods: {},
+  methods: {
+    handleSubmit() {
+      console.log(this.email);
+    },
+  },
 };
 </script>
 

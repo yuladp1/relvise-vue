@@ -1,22 +1,16 @@
 <template>
   <div class="wrapper__header-and-main">
     <div class="wrapper__header _container">
-      <header class="header__container">
+      <header class="header__container" v-bind:class="{ 'icon-mobile-view': mobileNav }">
         <a class="header__logo">Relvise</a>
         <nav class="header__menu menu">
           <ul class="menu__list" v-show="!mobile">
             <li class="menu__item"><a href="" class="menu__link">Home</a></li>
             <li class="menu__item"><a href="" class="menu__link">Product</a></li>
-            <li class="men u__item"><a href="" class="menu__link">Pricing</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Pricing</a></li>
             <li class="menu__item"><a href="" class="menu__link">Contact</a></li>
           </ul>
 
-          <div
-            class="icon"
-            v-on:click="toggleMobileNav"
-            v-show="mobile"
-            v-bind:class="{ 'icon-active': mobileNav }"
-          ></div>
           <transition name="mobile-nav">
             <ul class="dropdown-nav" v-show="mobileNav">
               <li class="link">Home</li>
@@ -26,6 +20,7 @@
             </ul>
           </transition>
         </nav>
+        <div class="icon" v-on:click="toggleMobileNav" v-show="mobile"></div>
       </header>
     </div>
     <main class="page">
@@ -86,14 +81,14 @@ export default {
 <style scoped>
 .icon {
   background-image: url("../assets/images/hamburger-menu.png");
-  display: flex;
+  /* display: flex; align-items: center;*/
   width: 30px;
   height: 30px;
   background-size: cover;
-  align-items: center;
 }
-.icon-active {
-  transform: rotate(1turn);
+.icon-mobile-view {
+  display: flex;
+  justify-content: space-between;
 }
 .wrapper__header {
   position: relative;
@@ -111,6 +106,12 @@ export default {
   z-index: 10;
   width: 100%;
   padding: 0 15px;
+}
+@media (max-width: 992px) {
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .header__logo {
