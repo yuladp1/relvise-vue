@@ -5,18 +5,18 @@
         <a class="header__logo">Relvise</a>
         <nav class="header__menu menu">
           <ul class="menu__list" v-show="!mobile">
-            <li class="menu__item"><a href="" class="menu__link">Home</a></li>
-            <li class="menu__item"><a href="" class="menu__link">Product</a></li>
-            <li class="menu__item"><a href="" class="menu__link">Pricing</a></li>
-            <li class="menu__item"><a href="" class="menu__link">Contact</a></li>
+            <a href="" class="menu__link"><li class="menu__item">Home</li></a>
+            <a href="" class="menu__link"><li class="menu__item">Product</li></a>
+            <a href="" class="menu__link"><li class="menu__item">Pricing</li></a>
+            <a href="" class="menu__link"><li class="menu__item">Contact</li></a>
           </ul>
 
           <transition name="mobile-nav">
             <ul class="dropdown-nav" v-show="mobileNav">
-              <li class="link">Home</li>
-              <li class="link">Product</li>
-              <li class="link">Pricing</li>
-              <li class="link">Contact</li>
+              <a href=""><li class="link">Home</li></a>
+              <a href=""><li class="link">Product</li></a>
+              <a href=""><li class="link">Pricing</li></a>
+              <a href=""><li class="link">Contact</li></a>
             </ul>
           </transition>
         </nav>
@@ -107,12 +107,6 @@ export default {
   width: 100%;
   padding: 0 15px;
 }
-@media (max-width: 992px) {
-  .header__container {
-    display: flex;
-    justify-content: space-between;
-  }
-}
 
 .header__logo {
   font-family: Montserrat;
@@ -125,22 +119,7 @@ export default {
   margin: 0 0 0 134px;
   padding: 5px 0;
 }
-@media (max-width: 992px) {
-  .header__menu {
-    margin: 0 0 0 80px;
-  }
-}
-@media (max-width: 767px) {
-  .header__menu {
-    margin: 0 0 0 40px;
-  }
-}
-@media (max-width: 992px) {
-  header__container {
-    display: flex;
-    justify-content: space-between;
-  }
-}
+
 .menu__list {
   display: flex;
   align-items: center;
@@ -161,15 +140,31 @@ export default {
   align-items: flex-start;
   align-content: space-around;
   position: absolute;
-  width: 120px;
-  background-color: white;
+  width: 200px;
+  background-color: #fafafa;
   top: 104px;
   right: 0;
   padding: 30px 0 30 20px;
+  z-index: 10;
+  height: 100vh;
+}
+.dropdown-nav > a {
+  width: 100%;
 }
 .dropdown-nav li {
-  color: black;
   padding: 10px;
+  color: #0d5c63;
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0;
+  font-weight: 700;
+  font-size: 24px;
+}
+.dropdown-nav > a > li:hover {
+  color: white;
+  background: #0d5c63;
+
+  transition: all 0.3s ease 0.2s;
 }
 
 .mobile-nav-enter-active,
@@ -189,14 +184,10 @@ page {
 }
 .page__wrapper {
   padding: 80px 15px 191px 15px;
-  z-index: 50;
   position: relative;
+  z-index: 1;
 }
-@media (max-width: 992px) {
-  .page__wrapper {
-    padding: 30px 15px 191px 15px;
-  }
-}
+
 .page__main-block {
   max-width: 509px;
   display: flex;
@@ -214,12 +205,7 @@ page {
   line-height: 80px;
   text-align: left;
 }
-@media (max-width: 992px) {
-  .main-block__title {
-    padding: 30px 15px 40px 15px;
-    font-size: 48px;
-  }
-}
+
 .main-block__text {
   font-size: 20px;
   font-weight: 500;
@@ -227,19 +213,8 @@ page {
   text-align: left;
   max-width: 400px;
 }
-@media (max-width: 992px) {
-  .main-block__text {
-    color: #252b42;
-    font-size: 28px;
-  }
-}
 .main-block__buttons {
   display: inline-flex;
-}
-@media (max-width: 992px) {
-  .main-block__buttons {
-    flex-wrap: wrap;
-  }
 }
 
 .main-block__button {
@@ -252,19 +227,8 @@ page {
   border-radius: 37px;
   flex: 0 1 50%;
 }
-@media (max-width: 992px) {
-  .main-block__button {
-    flex: 1 1 100%;
-    min-height: 50px;
-  }
-}
 .main-block__button:not(:last-child) {
   margin: 0 10px 0 0;
-}
-@media (max-width: 992px) {
-  .main-block__button:not(:last-child) {
-    margin: 20px 0;
-  }
 }
 .main-block__button-orange {
   background-color: #ff7b47;
@@ -277,11 +241,6 @@ page {
   transition: all 0.3s ease 0.2s;
 }
 
-@media (max-width: 992px) {
-  .main-block__button-orange {
-    margin-bottom: 10px;
-  }
-}
 .main-block__button-border {
   border: 1px solid #0d5c63;
   color: #0d5c63;
@@ -305,9 +264,46 @@ page {
     object-fit: right;
   }
 }
+
 @media (max-width: 992px) {
   .main-block__image img {
     opacity: 0.2;
+  }
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__menu {
+    margin: 0 0 0 80px;
+  }
+  .page__wrapper {
+    padding: 30px 15px 191px 15px;
+  }
+  .main-block__title {
+    padding: 30px 15px 40px 15px;
+    font-size: 48px;
+  }
+  .main-block__text {
+    color: #252b42;
+    font-size: 28px;
+  }
+  .main-block__buttons {
+    flex-wrap: wrap;
+  }
+  .main-block__button {
+    flex: 1 1 100%;
+    min-height: 50px;
+  }
+  .main-block__button:not(:last-child) {
+    margin: 20px 0;
+  }
+  .main-block__button-orange {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .header__menu {
+    margin: 0 0 0 40px;
   }
 }
 </style>
