@@ -97,6 +97,7 @@ export default {
   background-color: white;
   margin: 0 0 10px 0;
   flex-basis: 240px;
+  padding-top: 30px;
 }
 .advantages__item > *:not(:last-child) {
   padding: 0 0 10px 0;

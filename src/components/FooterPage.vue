@@ -100,7 +100,7 @@ export default {
 .footer__top {
   background-color: #17213c;
   color: white;
-  padding: 50px 0;
+  padding-bottom: 50px;
 }
 footer__container {
   margin: 0 -15px;
@@ -116,18 +116,12 @@ footer__container {
   flex-direction: column;
   align-items: flex-start;
   min-width: 148px;
+  margin-top: 50px;
 }
 .footer__column:last-child {
   flex: 0 1 33.334%;
 }
-@media (max-width: 950px) {
-  .footer__column {
-    flex: 0 1 25%;
-  }
-  .footer__column:last-child {
-    flex: 0 1 100%;
-  }
-}
+
 .footer__label {
   font-weight: 700;
   font-size: 16px;
@@ -199,5 +193,13 @@ footer__container {
 }
 .footer-social__icons > a:not(:last-child) {
   padding: 0 20px 0 0;
+}
+@media (max-width: 950px) {
+  .footer__column {
+    flex: 0 1 25%;
+  }
+  .footer__column:last-child {
+    flex: 0 1 100%;
+  }
 }
 </style>

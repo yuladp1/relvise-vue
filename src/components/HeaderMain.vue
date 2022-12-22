@@ -124,14 +124,16 @@ export default {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-}
-.menu__item:not(:last-child) {
-  margin: 0 31px 0 0;
+  gap: 20px;
 }
 .menu__link {
+  display: inline-block;
   line-height: 24px;
   font-weight: 600;
   color: #737373;
+}
+.menu__link:hover {
+  color: black;
 }
 .dropdown-nav {
   margin: 0;

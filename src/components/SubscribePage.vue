@@ -62,12 +62,6 @@ export default {
   position: relative;
 }
 
-@media (max-width: 950px) {
-  .subscribe__body {
-    flex-direction: column;
-    margin: 0 0;
-  }
-}
 .subscribe__title {
   font-weight: 700;
   font-size: 24px;
@@ -78,23 +72,14 @@ export default {
   flex: 0 1 50%;
   max-width: 266px;
 }
-@media (max-width: 950px) {
-  .subscribe__title {
-    max-width: 100%;
-    padding-bottom: 20px;
-  }
-}
+
 .subscribe__form {
   flex: 0 1 50%;
   display: flex;
   align-items: stretch;
   justify-content: flex-end;
 }
-@media (max-width: 950px) {
-  .subscribe__form {
-    max-width: 70%;
-  }
-}
+
 .subscribe__input {
   flex: 1 1 auto;
   font-weight: 400;
@@ -112,5 +97,42 @@ export default {
   border: 1px solid #e6e6e6;
   border-radius: 0px 5px 5px 0px;
   padding: 15px 22px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+@media (max-width: 950px) {
+  .subscribe__body {
+    flex-direction: column;
+    margin: 0 0;
+  }
+  .subscribe__title {
+    max-width: 100%;
+    padding-bottom: 20px;
+  }
+  .subscribe__form {
+    max-width: 70%;
+  }
+}
+@media (max-width: 550px) {
+  .subscribe__form {
+    max-width: 100%;
+  }
+}
+@media (max-width: 370px) {
+  .subscribe__form {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .subscribe__input {
+    border-radius: 5px;
+    min-height: 58px;
+  }
+  .subscribe__button {
+    flex: 0 1 100%;
+    border-radius: 5px;
+  }
 }
 </style>

@@ -63,28 +63,14 @@ export default {
 .getintouch {
   padding: 80px 0 136px 0;
 }
-@media (max-width: 992px) {
-  .getintouch {
-    padding: 40px 0 40px 0;
-  }
-}
 
 .getintouch__header {
   margin: 0 0 80px 0;
 }
-
 .getintouch__items {
   margin: 0 -15px;
   display: flex;
   align-items: center;
-}
-@media (max-width: 992px) {
-  .getintouch__items {
-    flex-direction: column;
-  }
-  .getintouch__item {
-    min-width: 100%;
-  }
 }
 .getintouch__item {
   display: flex;
@@ -94,10 +80,6 @@ export default {
   flex: 0 1 33.3333%;
   background: white;
   padding: 50px 15px;
-}
-.getintouch__item:hover {
-  transform: scale(1.2);
-  border: 1px solid #252b42;
 }
 .getintouch__item > *:not(:last-child) {
   padding-bottom: 15px;
@@ -143,5 +125,16 @@ export default {
 .getintouch__button:hover {
   color: white;
   background-color: #ff7b47;
+}
+@media (max-width: 992px) {
+  .getintouch {
+    padding: 40px 0 40px 0;
+  }
+  .getintouch__items {
+    flex-direction: column;
+  }
+  .getintouch__item {
+    min-width: 100%;
+  }
 }
 </style>

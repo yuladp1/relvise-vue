@@ -36,6 +36,9 @@ export default {
   text-align: left;
   padding-right: 20px;
 }
+.contact__content > *:not(:last-child) {
+  margin-bottom: 10px;
+}
 .contact__title {
   font-weight: 700;
   font-size: 24px;

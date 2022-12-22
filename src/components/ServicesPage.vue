@@ -62,8 +62,9 @@ export default {
 .services__column {
   padding: 0 15px;
   display: flex;
-  flex-wrap: wrap;
   height: 100%;
+  gap: 30px;
+  flex-wrap: nowrap;
 }
 
 .services__item {
@@ -77,18 +78,6 @@ export default {
   height: 100%;
 }
 
-@media (max-width: 992px) {
-  .services__item {
-    flex: 0 1 50%;
-    margin: 0 0 30px 0;
-  }
-}
-@media (max-width: 670px) {
-  .services__item {
-    flex: 0 1 100%;
-    margin: 0 15px 15px 15px;
-  }
-}
 .item-services-green {
   background-color: #0d5c63;
 }
@@ -115,5 +104,21 @@ export default {
   line-height: 20px;
   letter-spacing: 0.2px;
   color: #737373;
+}
+@media (max-width: 992px) {
+  .services__column {
+    flex-wrap: wrap;
+    gap: unset;
+  }
+  .services__item {
+    flex: 0 1 48%;
+    margin: 0 0 30px 0;
+  }
+}
+@media (max-width: 670px) {
+  .services__item {
+    flex: 0 1 100%;
+    margin: 0 15px 15px 15px;
+  }
 }
 </style>
