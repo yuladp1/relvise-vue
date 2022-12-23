@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper__header-and-main">
     <div class="wrapper__header _container">
-      <header class="header__container" v-bind:class="{ 'icon-mobile-view': mobileNav }">
+      <header class="header__container" :class="{ 'icon-mobile-view': mobileNav }">
         <a class="header__logo">Relvise</a>
         <nav class="header__menu menu">
           <ul class="menu__list" v-show="!mobile">
@@ -50,7 +50,6 @@ export default {
   name: "HeaderMain",
   data() {
     return {
-      scrollPosition: null,
       mobile: false,
       mobileNav: null,
       windowWidth: null,
@@ -81,7 +80,6 @@ export default {
 <style scoped>
 .icon {
   background-image: url("../assets/images/hamburger-menu.png");
-  /* display: flex; align-items: center;*/
   width: 30px;
   height: 30px;
   background-size: cover;
@@ -252,7 +250,6 @@ page {
   color: white;
   transition: all 0.3s ease 0.2s;
 }
-
 .main-block__image {
   position: absolute;
   width: 100%;

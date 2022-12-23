@@ -61,12 +61,6 @@
 <script>
 export default {
   name: "WhowearePage",
-  created() {},
-  data() {
-    return {};
-  },
-  props: {},
-  methods: {},
 };
 </script>
 

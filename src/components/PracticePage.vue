@@ -76,12 +76,6 @@
 <script>
 export default {
   name: "PracticePage",
-  created() {},
-  data() {
-    return {};
-  },
-  props: {},
-  methods: {},
 };
 </script>
 

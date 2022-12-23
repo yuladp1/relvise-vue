@@ -33,12 +33,6 @@
 <script>
 export default {
   name: "ClientsPage",
-  created() {},
-  data() {
-    return {};
-  },
-  props: {},
-  methods: {},
 };
 </script>
 

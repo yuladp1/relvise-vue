@@ -87,12 +87,6 @@
 <script>
 export default {
   name: "FooterPage",
-  created() {},
-  data() {
-    return {};
-  },
-  props: {},
-  methods: {},
 };
 </script>
 

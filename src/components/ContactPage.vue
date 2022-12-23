@@ -15,12 +15,6 @@
 <script>
 export default {
   name: "ContactPage",
-  created() {},
-  data() {
-    return {};
-  },
-  props: {},
-  methods: {},
 };
 </script>
 

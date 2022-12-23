@@ -21,7 +21,6 @@
 <script>
 export default {
   name: "SubscribePage",
-  created() {},
   data() {
     return {
       email: "",
@@ -37,7 +36,6 @@ export default {
 </script>
 
 <style scoped>
-/* ------subscribe--------*/
 .subscribe {
   position: relative;
   z-index: 3;

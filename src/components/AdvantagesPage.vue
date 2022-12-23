@@ -54,12 +54,6 @@
 <script>
 export default {
   name: "AdvantagesPage",
-  created() {},
-  data() {
-    return {};
-  },
-  props: {},
-  methods: {},
 };
 </script>
 

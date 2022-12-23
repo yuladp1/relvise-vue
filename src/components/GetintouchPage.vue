@@ -50,12 +50,6 @@
 <script>
 export default {
   name: "GetintouchPage",
-  created() {},
-  data() {
-    return {};
-  },
-  props: {},
-  methods: {},
 };
 </script>
 

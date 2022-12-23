@@ -37,12 +37,6 @@
 <script>
 export default {
   name: "ServicesPage",
-  created() {},
-  data() {
-    return {};
-  },
-  props: {},
-  methods: {},
 };
 </script>
 
